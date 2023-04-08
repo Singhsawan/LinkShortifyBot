@@ -269,7 +269,7 @@ async def broadcast_admins(c: Client, Message, sender=False):
         try:
             await c.send_message(i, Message)
         except PeerIdInvalid:
-            logging.info(f"{i} have not yet started the bot")
+            logging.info(f"{i} Have Not Yet Started The Bot")
         except FloodWait as e:
             logging.error(f"Sleeping for {e.x} seconds")
             await asyncio.sleep(e.x)
@@ -279,7 +279,7 @@ async def broadcast_admins(c: Client, Message, sender=False):
 
 
 async def get_size(size):
-    """Get size in readable format"""
+    """Get Size In Readable Format"""
     units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
     size = float(size)
     i = 0
@@ -354,12 +354,12 @@ async def user_api_check(user):
             return "\n\nSet Your /mdisk_api To Continue..."
     elif user_method == "shortener":
         if not user["shortener_api"]:
-            return f"\n\nSet Your /api To Continue...\nCurrent Website {user['base_site']}"
+            return f"\n\nSet Your /shortener_api To Continue...\nCurrent Website {user['base_site']}"
     elif user_method == "mdlink":
         if not user["mdisk_api"]:
             return "\n\nSet your /mdisk_api to continue..."
         if not user["shortener_api"]:
-            return f"\n\nSet Your /api To Continue...\nCurrent Website {user['base_site']}"
+            return f"\n\nSet Your /shortener_api To Continue...\nCurrent Website {user['base_site']}"
     else:
         return "\n\nSet Your /method First"
     return True
@@ -390,16 +390,15 @@ async def set_commands(app):
         BotCommand("username", "To Set The Username To Replace"),
         BotCommand("banner_image", "To Set tThe Banner Image."),
         BotCommand("me", "To Check Your Settings"),
-        BotCommand("base_site", "To Changes The Base Site."),
         BotCommand("include_domain", "For Adding Included Domain."),
         BotCommand("exclude_domain", "For Adding Excluded Domain."),
+        BotCommand("batch", "To Convert Link For Channel (Admin Only)."),
+        BotCommand("logs", "To Get The Log Messages (Admin Only)."),
+        BotCommand("restart", "Restarts Or Re-Deploys The Bot (Admin Only)."),
+        BotCommand("ban", "To Ban User (Admin Only)."),
+        BotCommand("unban", "To Unban User (Admin Only)."),
+        BotCommand("info", "To Get User Info (Admin Only)."),
         BotCommand("stats", "To Displays Statistics Of The Server And Bot"),
-        BotCommand("batch", "To Convert Link For Channel (admin only)."),
-        BotCommand("logs", "To Get The Log Messages (admin only)."),
-        BotCommand("restart", "Restarts Or Re-Deploys The Bot (admin only)."),
-        BotCommand("ban", "To Ban User (admin only)."),
-        BotCommand("unban", "To Unban User (admin only)."),
-        BotCommand("info", "To Get User Info (admin only)."),
     ]
 
     await app.set_bot_commands(COMMANDS)
