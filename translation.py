@@ -1,45 +1,39 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-BATCH_MESSAGE = BATCH = """
-Need to shorten or convert links from all of your channel's posts? I've got you covered! Just make me an admin in your channel and use the following command:
+BATCH_MESSAGE = BATCH = """💠 I Will Short All Your Channels Link With LinkShortify. Make Me Admin In Your Channel Withh All Rights And Follow Steps.
 
-<code>/batch [channel id or username]</code>
+➡️ Example : `/batch linkshortify`
 
-For example: <code>/batch -100xxx</code>
+⚠️ You Can Also Use Channel ID Instead Of Channel Username
 
-I'll handle the rest and get those links shortened or converted in a short time! 💪
+⚙️ Hit `/me` To Control Your Settings
 """
 
-START_MESSAGE = """Hi there {} 
+START_MESSAGE = """Hi There {} !
 
-Send me a link or post and I'll shorten it for you!
+🔰 I Am A Powerful Link Shortener Robot With Fast Speed And A Lot Of Functions.
 
-To learn more about what I can do, just type /help.
+➡️ To Know More About Me Hit `/help` Command
+➡️ To Link Your Shortener API Hit `/shortener_api` Command
 
-Method: {}
-Shortener website: {}
+Current Method : {}
 """
 
-HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
+HELP_MESSAGE = """💠 Hey Welcome To LinkShortify Bot, I Have Many eatures To Make Your Work Easier And Help You To Earn More 💰.
 
-I have a ton of handy features to help you out, such as:
+👉 Here Is The List Of My Features :
 
-- [Hyperlink](https://t.me/{username}) support 🔗
-- Button conversion support 🔘
-- Domain inclusion and exclusion options 🌐
-- Header and footer text support 📝
-- Replace username function 📎
-- Banner image support 🖼️
-- Batch conversion for channel admins only 📊
-- Channel support for admins only 📢
+➡️ HyperLink And Hidden Link Support
+➡️ Button Conversion Support
+➡️ Domain Inclusion And Exclusion Options
+➡️ Header And Footer Text Support
+➡️ Replace Username Function
+➡️ Banner Image Support
+➡️ Batch Conversion For Channels
+➡️ Channel Support For Admins Only
 
-Useful commands:
-
-- /start: Start me up! You probably already used this.
-- /help: Send this message; I'll tell you more about myself!
-- /batch -100xxx: To shorten or convert all posts in your channel
-"""
+🔰 For Support Contact Here @BrixFylSupport"""
 
 ABOUT_TEXT = """
 **💠 About Us 💠
@@ -56,17 +50,15 @@ ABOUT_TEXT = """
 """
 
 
-METHOD_MESSAGE = """
-Current Method : {method}
-    
-Methods Available :
+METHOD_MESSAGE = """💠 Methods Available :
 
-> `Mdisk + Shortener (MDLINK)` - Change All The Links Of The Post To Your MDisk Account First And Then Short To LinkShortify Link.
+➡️ `Mdisk + Shortener (MDLINK)` - Change All The Links Of The Post To Your MDisk Account First And Then Short To LinkShortify Link.
 
-> `Shortener` - Short All The Links Of The Post To LinkShortify Link Directly.
+➡️ `Shortener` - Short All The Links Of The Post To LinkShortify Link Directly.
     
-Click Below Button To Set / Change Method :
-"""
+👉 Current Method : {method}
+    
+Click Below Button To Set/Change Method :"""
 
 CUSTOM_ALIAS_MESSAGE = """For Custom Alias :
 
@@ -78,15 +70,12 @@ Example : https://google.com | demolink"""
 
 
 ADMINS_MESSAGE = """
-List Of Admins Who Has Access To This Bot
-
-{admin_list}
-"""
+List Of Admins Who Has Access To This Bot :
+{admin_list}"""
 
 
 CHANNELS_LIST_MESSAGE = """
-Here is a list of the channels:
-
+Here Is A List Of The Channels :
 {channels}"""
 
 
@@ -153,123 +142,117 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup(
 )
 
 USER_ABOUT_MESSAGE = """
-🔧 Here are the current settings for this bot:
+💠 Here Are Your Current Settings For This Bot :
 
-- 🌐 Shortener website : {base_site}
+➡️ Method : {method}
 
-- 🧰 Method : {method}
+➡️ LinkShortify API : {shortener_api}
 
-- 🔌 {base_site} API : {shortener_api}
+➡️ Mdisk API : {mdisk_api}
 
-- 💾 Mdisk API : {mdisk_api}
+➡️ Username : @{username}
 
-- 📎 Username : @{username}
+➡️ Header Text : {header_text}
 
-- 📝 Header Text :
-{header_text}
+➡️ Footer Text : {footer_text}
 
-- 📝 Footer Text :
-{footer_text}
-
-🖼️ Banner image: {banner_image}
+➡️ Banner Image:  {banner_image}
 """
 
 
-MDISK_API_MESSAGE = """To add or update your Mdisk API, \n`/mdisk_api mdisk_api`
+MDISK_API_MESSAGE = """💠 To Add Or Update Your Mdisk API,
             
-Ex: `/mdisk_api 6LZq851sXoPHugiKQq`
+➡️ Example : `/mdisk_api 6LZq851sXoPHugiKQq`
             
-Others Mdisk Links will be automatically changed to the API of this Mdisk account
+⚠️ Get Your Mdisk API From @VideoToolMoneyTreebot
 
-Get your Mdisk API from @VideoToolMoneyTreebot
+🔴 To Remove Mdisk API : `/mdisk_api remove`
 
-Current Mdisk API: `{}`"""
+👉 Current Mdisk API : `{}`
 
-SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
-`/shortener_api [api]`
+⚙️ Hit `/me` To Control Your Settings"""
+
+SHORTENER_API_MESSAGE = """To Add Or Update Your LinkShortify API,
             
-Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
+➡️ Example : `/shortener_api 6LZq851sXofffPHugiKQq`
 
-Current Website: {base_site}
+⚠️ Get Your LinkShortify API From [Here](https://linkshortify.com/member/tools/api)
 
-To change your Shortener Website: /base_site
+🔴 To Remove LinkShortify API : `/shortener_api remove`
 
-Current Shortener API: `{shortener_api}`"""
+👉 Current LinkShortify API : `{shortener_api}`
 
-HEADER_MESSAGE = """📝 To set the header text for every message caption or text, just reply with the text you want to use. You can use \\n to add a line break.
+⚙️ Hit `/me` To Control Your Settings"""
 
-🗑 To remove the header text, use the following command:
+HEADER_MESSAGE = """💠 To Set The Header Text For Every Message Caption Or Text.
 
-`/header remove`
+➡️ Reply To Any Text With `/header` To Set It As Header
 
-This is a helpful way to add a consistent header to all of your messages. Enjoy! 🎉"""
+🔴 To Remove The Header Text : `/header remove`
 
-FOOTER_MESSAGE = """📝 To set the footer text for every message caption or text, just reply with the text you want to use. You can use \\n to add a line break.
+👉 Current Header Text : {header_text}
 
-🗑 To remove the footer text, use the following command:
+⚙️ Hit `/me` To Control Your Settings"""
 
-`/footer remove`
+FOOTER_MESSAGE = """💠 To Set The Footer Text For Every Message Caption Or Text.
 
-This is a helpful way to add a consistent footer to all of your messages. Enjoy! 🎉"""
+➡️ Reply To Any Text With `/footer` To Set It As Footer
 
-USERNAME_TEXT = """Current username: {username}
+🔴 To Remove The Footer Text : `/footer remove`
 
-To set the username that will be automatically replaced with other usernames in the post, use the following command:
+👉 Current Header Text : {footer_text}
 
-`/username your_username`
+⚙️ Hit `/me` To Control Your Settings"""
 
-__(Note: Do not include the @ symbol in your username.)__
+USERNAME_TEXT = """💠 To Replace Specific Username From Post.
 
-To remove the current username, use the following command:
+➡️ Example : `/username linkshortify`
 
-`/username remove`
+🔴 To Remove The Username : `/username remove`
 
-This is a helpful way to make sure that all of your posts have a consistent username. Enjoy! 📎"""
+👉 Current Username : {username}
 
-BANNER_IMAGE = """
-Usage: `/banner_image image_url` or reply to any Image with this command
+⚙️ Hit `/me` To Control Your Settings"""
 
-This image will be automatically replaced with other images in the post
+BANNER_IMAGE = """💠 To Replace The Image From Post.
 
-To remove custom image, `/banner_image remove`
+➡️ Example : /banner_image https://linkshortify.com/logo/white-green.png
 
-Eg: `/banner_image https://www.nicepng.com/png/detail/436-4369539_movie-logo-film.png`"""
+⚠️ You Can Also Reply To Any Image With `/banner_image` To Set It As Banner Image.
 
-INCLUDE_DOMAIN_TEXT = """
-Use this option if you want to short only links from the following domains list.
+🔴 To Remove The Banner Image : `/banner_image remove`
 
-Current Include Domain:
-{}
-Usage: /include_domain domain
-Ex: `/include_domain t.me, stack.com`
+👉 Current Banner Image : {banner_image}
 
-To remove a domain,
-Ex: `/include_domain remove t.me`
+⚙️ Hit `/me` To Control Your Settings"""
 
-To remove all domains,
-Ex: `/include_domain remove_all`
-"""
+INCLUDE_DOMAIN_TEXT = """💠 Bot Will Short Only Included Domains Only With This Command
 
-EXCLUDE_DOMAIN_TEXT = """
-Use this option if you wish to short every link on your channel but exclude only the links from the following domains list
+➡️ Example : /include_domain t.me telegram.me
 
-Current Exclude Domains:
-{}
-Usage: /exclude_domain domain
-Ex: `/exclude_domain t.me, google.com`
+🔴 To Remove The Specific Included Domain : `/include_domain remove t.me`
 
-To remove a domain, 
-Ex: `/exclude_domain remove t.me`
+🔴 To Remove All Included Domains : `/include_domain remove_all`
 
-To remove all domains,
-Ex: `/exclude_domain remove_all`
-"""
+👉 Current Included Domains : {}
+
+⚙️ Hit `/me` To Control Your Settings"""
+
+EXCLUDE_DOMAIN_TEXT = """💠 Bot Will Not Short Excluded Domains With This Command
+
+➡️ Example : /exclude_domain t.me telegram.me
+
+🔴 To Remove The Specific Excluded Domain : `/exclude_domain remove t.me`
+
+🔴 To Remove All Excluded Domains : `/exclude_domain remove_all`
+
+👉 Current Excluded Domains : {}
+
+⚙️ Hit `/me` To Control Your Settings"""
 
 BANNED_USER_TXT = """
-Usage: `/ban [User ID]`
-Usage: `/unban [User ID]`
+Usage : `/ban [User ID]`
+Usage : `/unban [User ID]`
 
-List of users that are banned:
-
-{users}
-"""
+List Of Banned Users :
+{users}"""
