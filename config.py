@@ -19,7 +19,7 @@ def is_enabled(value, default):
 API_ID = int(os.environ.get("API_ID","5605321"))
 # API Hash from https://my.telegram.org/auth
 API_HASH = os.environ.get("API_HASH","178cd2fc5f7c4517bc783ac5a5362a1c")
-BOT_TOKEN = os.environ.get("BOT_TOKEN","6038977580:AAEjjWf5Qs5AOcs21He1IFsSyY4ks0vZvWY")  # Bot token from @BotFather
+BOT_TOKEN = os.environ.get("BOT_TOKEN","5969083732:AAHrbP5jIWEnn86fR5bVEo6fHcbSK3ZP5jw")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
     if os.environ.get("ADMINS")
@@ -37,7 +37,7 @@ ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 LOG_CHANNEL = int(
     os.environ.get("LOG_CHANNEL", "-1001943453019")
 )  # log channel for information about users
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "@LinkShortify")  # For Force Subscription
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", )  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "True")), True
 )  # true if forward should be avoided
