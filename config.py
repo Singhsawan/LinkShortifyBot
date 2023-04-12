@@ -28,7 +28,7 @@ ADMINS = (
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "linkshortify")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "mongodb+srv://linkshortify:GUN07gun07@linkshortify.xiblsjb.mongodb.net/?retryWrites=true&w=majority"
+    "DATABASE_URL", "mongodb+srv://linkshortifycom:GUN07gun07@linkshortify.ymvjszz.mongodb.net/?retryWrites=true&w=majority"
 )  # mongodb uri from https://www.mongodb.com/
 OWNER_ID = int(os.environ.get("OWNER_ID", "1446498316"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
@@ -37,7 +37,7 @@ ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 LOG_CHANNEL = int(
     os.environ.get("LOG_CHANNEL", "-1001943453019")
 )  # log channel for information about users
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", )  # For Force Subscription
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", -1001537277965)  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "True")), True
 )  # true if forward should be avoided
