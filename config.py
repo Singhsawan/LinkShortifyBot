@@ -16,10 +16,10 @@ def is_enabled(value, default):
 
 # Mandatory variables for the bot to start
 # API ID from https://my.telegram.org/auth
-API_ID = int(os.environ.get("API_ID","5605321"))
+API_ID = int(os.environ.get("API_ID","29362464"))
 # API Hash from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH","178cd2fc5f7c4517bc783ac5a5362a1c")
-BOT_TOKEN = os.environ.get("BOT_TOKEN","5969083732:AAHrbP5jIWEnn86fR5bVEo6fHcbSK3ZP5jw")  # Bot token from @BotFather
+API_HASH = os.environ.get("API_HASH","31973315b0872a0478886de31a1e4848")
+BOT_TOKEN = os.environ.get("BOT_TOKEN","6115839775:AAHXfecuChGkyI8YVF065IOeLsU0ELNwPKA")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
     if os.environ.get("ADMINS")
@@ -28,14 +28,14 @@ ADMINS = (
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "linkshortify")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "mongodb+srv://linkshortifycom:GUN07gun07@linkshortify.qkarnlr.mongodb.net/?retryWrites=true&w=majority"
+    "DATABASE_URL", "mongodb+srv://Rishikesh001:Rishikesh001@cluster0.lqncnak.mongodb.net/?retryWrites=true&w=majority"
 )  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID", "1446498316"))  # id of the owner
+OWNER_ID = int(os.environ.get("OWNER_ID", "5651594253"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "-1001943453019")
+    os.environ.get("LOG_CHANNEL", "-1001551869890")
 )  # log channel for information about users
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", False)  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
@@ -53,7 +53,7 @@ LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
 # your shortener site domain
-BASE_SITE = os.environ.get("BASE_SITE", "linkshortify.com")
+BASE_SITE = os.environ.get("BASE_SITE", "tajlink.com")
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
