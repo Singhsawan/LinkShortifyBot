@@ -10,4 +10,4 @@ validators
 python-dotenv
 uvloop
 aiohttp==3.8.1
-pyproject.toml-based
+pyproject.toml
