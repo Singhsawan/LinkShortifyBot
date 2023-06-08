@@ -9,3 +9,4 @@ aiofiles
 validators
 python-dotenv
 uvloop
+aiohttp==3.8.1
