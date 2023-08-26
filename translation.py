@@ -1,9 +1,9 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-BATCH_MESSAGE = BATCH = """💠 I Will Short All Your Channels Link With LinkShortify. Make Me Admin In Your Channel Withh All Rights And Follow Steps.
+BATCH_MESSAGE = BATCH = """💠 I Will Short All Your Channels Link With Omnifly. Make Me Admin In Your Channel Withh All Rights And Follow Steps.
 
-➡️ Example : `/batch linkshortify`
+➡️ Example : `/batch Omnifly`
 
 ⚠️ You Can Also Use Channel ID Instead Of Channel Username
 
@@ -20,7 +20,7 @@ START_MESSAGE = """Hi There {} !
 Current Method : {}
 """
 
-HELP_MESSAGE = """💠 Hey Welcome To LinkShortify Bot, I Have Many eatures To Make Your Work Easier And Help You To Earn More 💰.
+HELP_MESSAGE = """💠 Hey Welcome To Omnifly Bot, I Have Many eatures To Make Your Work Easier And Help You To Earn More 💰.
 
 👉 Here Is The List Of My Features :
 
@@ -33,28 +33,28 @@ HELP_MESSAGE = """💠 Hey Welcome To LinkShortify Bot, I Have Many eatures To M
 ➡️ Batch Conversion For Channels
 ➡️ Channel Support For Admins Only
 
-🔰 For Support Contact Here @BrixFylSupport"""
+🔰 For Support Contact Here @J_shree_ram"""
 
 ABOUT_TEXT = """
 **💠 About Us 💠
 
-🔰 I Am : LinkShortify RoBot
+🔰 I Am : omnifly.in.net RoBot
 
 🔰 Our Support  : [Whatsapp](https://wa.me/917990556806) & [Telegram](https://t.me/brixflysupport)
 
-🔰 Official Channel : @LinkShortify
+🔰 Official Channel : @OmniflyLinks
 
-🔰 Payment Proof : [Click Here](https://linkshortify.com/pages/payment-proofs)
+🔰 Payment Proof : [Click Here](https://Omnifly.in.net/pages/payment-proofs)
 
-❤️ Made With Love By LinkShortify ❤️**
+❤️ Made With Love By Omnifly ❤️**
 """
 
 
 METHOD_MESSAGE = """💠 Methods Available :
 
-➡️ `Mdisk + Shortener (MDLINK)` - Change All The Links Of The Post To Your MDisk Account First And Then Short To LinkShortify Link.
+➡️ `Mdisk + Shortener (MDLINK)` - Change All The Links Of The Post To Your MDisk Account First And Then Short To Omnifly Link.
 
-➡️ `Shortener` - Short All The Links Of The Post To LinkShortify Link Directly.
+➡️ `Shortener` - Short All The Links Of The Post To Omnifly Link Directly.
     
 👉 Current Method : {method}
     
@@ -172,15 +172,15 @@ MDISK_API_MESSAGE = """💠 To Add Or Update Your Mdisk API,
 
 ⚙️ Hit `/me` To Control Your Settings"""
 
-SHORTENER_API_MESSAGE = """To Add Or Update Your LinkShortify API,
+SHORTENER_API_MESSAGE = """To Add Or Update Your Omnifly API,
             
 ➡️ Example : `/shortener_api 6LZq851sXofffPHugiKQq`
 
-⚠️ Get Your LinkShortify API From [Here](https://linkshortify.com/member/tools/api)
+⚠️ Get Your Omnifly API From [Here](https://Omnifly.in.net/member/tools/api)
 
-🔴 To Remove LinkShortify API : `/shortener_api remove`
+🔴 To Remove Omnifly API : `/shortener_api remove`
 
-👉 Current LinkShortify API : `{shortener_api}`
+👉 Current Omnifly API : `{shortener_api}`
 
 ⚙️ Hit `/me` To Control Your Settings"""
 
@@ -206,7 +206,7 @@ FOOTER_MESSAGE = """💠 To Set The Footer Text For Every Message Caption Or Tex
 
 USERNAME_TEXT = """💠 To Replace Specific Username From Post.
 
-➡️ Example : `/username linkshortify`
+➡️ Example : `/username Omnifly
 
 🔴 To Remove The Username : `/username remove`
 
@@ -216,7 +216,7 @@ USERNAME_TEXT = """💠 To Replace Specific Username From Post.
 
 BANNER_IMAGE = """💠 To Replace The Image From Post.
 
-➡️ Example : /banner_image https://linkshortify.com/logo/white-green.png
+➡️ Example : /banner_image https://Omnifly.in.net/logo/white-green.png
 
 ⚠️ You Can Also Reply To Any Image With `/banner_image` To Set It As Banner Image.
 
